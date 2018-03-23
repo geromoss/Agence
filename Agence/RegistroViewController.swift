@@ -53,20 +53,28 @@ class RegistroViewController: UIViewController {
                 do{
                     //esto permite guardar la persistencia del objeto hacia la base de datos CoreData
                     try context.save()
+                    self.MostrarMensajeAlUsuario(Title: "Alerta", msg: "User saved!")
                 }catch{
                     print("Ha habido un error al guardar el usuario en el CoreData")
                 }
             }
         }else{
             print("no son iguales")
-            self.MostrarMensajeAlUsuario(Title: "Alerta", msg: "El password y confirmacion de password no son iguales")
+            self.MostrarMensajeAlUsuario(Title: "Alerta", msg: "Password Don't match")
         }
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            //mientras haya un anuncio o actividad se debe dejar en otro hilo la transision de mosterse a otra vista para que sea exitoso
+            self.navigationController?.popToRootViewController(animated: true)
+        }
+      
     }
     
     func MostrarMensajeAlUsuario(Title: String, msg: String){
         let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
+        
     }
     
     
