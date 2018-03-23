@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A8F311520633CC200ACB69E /* PaintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8F311420633CC200ACB69E /* PaintViewController.swift */; };
+		6A8F31172063496A00ACB69E /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8F31162063496A00ACB69E /* RegistroViewController.swift */; };
+		6ABA7EF72065496500788667 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABA7EF62065496500788667 /* Usuario.swift */; };
+		6ABA7EF92065837A00788667 /* SlideHorSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABA7EF82065837900788667 /* SlideHorSegue.swift */; };
 		FBEF1F652061642E0023B476 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEF1F642061642E0023B476 /* AppDelegate.swift */; };
 		FBEF1F672061642E0023B476 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEF1F662061642E0023B476 /* ViewController.swift */; };
 		FBEF1F6A2061642E0023B476 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBEF1F682061642E0023B476 /* Main.storyboard */; };
 		FBEF1F6D2061642E0023B476 /* Agence.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBEF1F6B2061642E0023B476 /* Agence.xcdatamodeld */; };
 		FBEF1F6F2061642E0023B476 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBEF1F6E2061642E0023B476 /* Assets.xcassets */; };
 		FBEF1F722061642E0023B476 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBEF1F702061642E0023B476 /* LaunchScreen.storyboard */; };
-		FBEF1F7D2061642E0023B476 /* AgenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEF1F7C2061642E0023B476 /* AgenceTests.swift */; };
 		FBEF1F882061642E0023B476 /* AgenceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEF1F872061642E0023B476 /* AgenceUITests.swift */; };
 		FBEF1F96206165E70023B476 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEF1F95206165E70023B476 /* CanvasView.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A8F311420633CC200ACB69E /* PaintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintViewController.swift; sourceTree = "<group>"; };
+		6A8F31162063496A00ACB69E /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
+		6ABA7EF62065496500788667 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		6ABA7EF82065837900788667 /* SlideHorSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideHorSegue.swift; sourceTree = "<group>"; };
 		FBEF1F612061642E0023B476 /* Agence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agence.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBEF1F642061642E0023B476 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBEF1F662061642E0023B476 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,8 +52,6 @@
 		FBEF1F712061642E0023B476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBEF1F732061642E0023B476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBEF1F782061642E0023B476 /* AgenceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgenceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FBEF1F7C2061642E0023B476 /* AgenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgenceTests.swift; sourceTree = "<group>"; };
-		FBEF1F7E2061642E0023B476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBEF1F832061642E0023B476 /* AgenceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgenceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBEF1F872061642E0023B476 /* AgenceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgenceUITests.swift; sourceTree = "<group>"; };
 		FBEF1F892061642E0023B476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				FBEF1F632061642E0023B476 /* Agence */,
-				FBEF1F7B2061642E0023B476 /* AgenceTests */,
 				FBEF1F862061642E0023B476 /* AgenceUITests */,
 				FBEF1F622061642E0023B476 /* Products */,
 			);
@@ -104,22 +108,17 @@
 				FBEF1F642061642E0023B476 /* AppDelegate.swift */,
 				FBEF1F662061642E0023B476 /* ViewController.swift */,
 				FBEF1F95206165E70023B476 /* CanvasView.swift */,
+				6ABA7EF62065496500788667 /* Usuario.swift */,
 				FBEF1F682061642E0023B476 /* Main.storyboard */,
+				6ABA7EF82065837900788667 /* SlideHorSegue.swift */,
+				6A8F31162063496A00ACB69E /* RegistroViewController.swift */,
+				6A8F311420633CC200ACB69E /* PaintViewController.swift */,
 				FBEF1F6E2061642E0023B476 /* Assets.xcassets */,
 				FBEF1F702061642E0023B476 /* LaunchScreen.storyboard */,
 				FBEF1F732061642E0023B476 /* Info.plist */,
 				FBEF1F6B2061642E0023B476 /* Agence.xcdatamodeld */,
 			);
 			path = Agence;
-			sourceTree = "<group>";
-		};
-		FBEF1F7B2061642E0023B476 /* AgenceTests */ = {
-			isa = PBXGroup;
-			children = (
-				FBEF1F7C2061642E0023B476 /* AgenceTests.swift */,
-				FBEF1F7E2061642E0023B476 /* Info.plist */,
-			);
-			path = AgenceTests;
 			sourceTree = "<group>";
 		};
 		FBEF1F862061642E0023B476 /* AgenceUITests */ = {
@@ -266,9 +265,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBEF1F6D2061642E0023B476 /* Agence.xcdatamodeld in Sources */,
+				6ABA7EF92065837A00788667 /* SlideHorSegue.swift in Sources */,
+				6A8F31172063496A00ACB69E /* RegistroViewController.swift in Sources */,
+				6ABA7EF72065496500788667 /* Usuario.swift in Sources */,
 				FBEF1F672061642E0023B476 /* ViewController.swift in Sources */,
 				FBEF1F96206165E70023B476 /* CanvasView.swift in Sources */,
 				FBEF1F652061642E0023B476 /* AppDelegate.swift in Sources */,
+				6A8F311520633CC200ACB69E /* PaintViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +279,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBEF1F7D2061642E0023B476 /* AgenceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +379,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -426,6 +429,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -437,10 +441,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQ5448YA57;
 				INFOPLIST_FILE = Agence/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cl.gerardolupa.ios.Agence;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -452,10 +457,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQ5448YA57;
 				INFOPLIST_FILE = Agence/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cl.gerardolupa.ios.Agence;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
