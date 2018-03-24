@@ -21,8 +21,8 @@ class RegistroViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.navigationController?.isNavigationBarHidden = true
+       
     }
     
     
@@ -83,6 +83,7 @@ class RegistroViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+ 
 
     /*
     // MARK: - Navigation

@@ -50,10 +50,13 @@ class ViewController: UIViewController {
             print("obtenido resultados")
             print(resultado)
             if(resultado.count > 0){
+                //encontro el registro con usaurio y password correctos
                 almacenado = resultado[0] as! Usuario
                 print("datos encontrados en CoraData mostrar acceso")
                 print("Nombre usuario: \(almacenado.nombre_usuario)")
                 print("password :\(almacenado.password)")
+              
+                
             }else{
                self.MostrarMensajeAlUsuario(Title: "Alerta", msg: "Incorrect user/password combination.")
             }
@@ -74,6 +77,11 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated);
+        self.navigationController?.isNavigationBarHidden = true
     }
 
 
