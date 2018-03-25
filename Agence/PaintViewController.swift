@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class PaintViewController: UIViewController {
 
@@ -15,9 +16,15 @@ class PaintViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        /*
+        self.navigationItem.hidesBackButton = true
+        let nuevoBotonBack = UIBarButtonItem(title: "Home", style: UIBarButtonItemStyle.plain, target: self, action: #selector(PaintViewController.back(sender:)))
+        self.navigationItem.leftBarButtonItem = nuevoBotonBack
+        */
         // Do any additional setup after loading the view.
     }
+    
     
     
     @IBAction func clearCanvas(_ sender: Any) {
@@ -26,6 +33,19 @@ class PaintViewController: UIViewController {
 
     }
     
+    override func didMove(toParentViewController parent: UIViewController?) {
+        if parent == nil {
+            //presionado el boton back aqui podemos guardar en el coreData
+            print("presionado el boton back aqui se puede guardar en el coredata")
+           
+        }
+    }
+    
+    
+    func back(sender: UIBarButtonItem){
+        print("presiona el boton back aqui podemos guardar en el coreData")
+        _ = navigationController?.popViewController(animated: true)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

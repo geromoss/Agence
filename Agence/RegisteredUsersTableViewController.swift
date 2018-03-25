@@ -10,15 +10,14 @@ import UIKit
 import CoreData
 
 class RegisteredUsersTableViewController: UITableViewController {
-
-   // var listaUsuario = [NSManagedObject]()
-   // var array = [AnyObject]()
+    //array de usuarios inicializado en vacio
     var usuarios : [Usuario] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //conectamos con la base de datos
         if let container = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer{
+        //inicializamos el contexto hacia el coreData
         let context = container.viewContext
         
         //recuperar los usuarios que hay en la base de datos
@@ -34,12 +33,6 @@ class RegisteredUsersTableViewController: UITableViewController {
                 print("Error no se pudo hacer el fetch \(error.localizedDescription)")
             }
         }
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     override func didReceiveMemoryWarning() {
@@ -62,45 +55,17 @@ class RegisteredUsersTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //con esto recorremos en el array todos los nombres que hay en el Array de tipo usuario
         let Elusuario = usuarios[indexPath.row]
         let cellID = "cell"
         
         let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
 
-        // Configure the cell...
-       cell.textLabel?.text = Elusuario.nombre_usuario
-
+        //mostrara el nombre de usuario uno por uno hasta que se termine el array Usuario[]
+        cell.textLabel?.text = Elusuario.nombre_usuario
         return cell
     }
     
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
     /*
     // Override to support conditional rearranging of the table view.
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
